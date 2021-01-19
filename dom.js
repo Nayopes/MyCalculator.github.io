@@ -17,7 +17,7 @@ for (i=0; i<btn.length; i++){
            let z = eval(x1)
            console.log(x + z)
            tablo.innerHTML = z 
-           history.innerHTML = `${history.innerHTML} ${x} ${z}` 
+           history.innerHTML = `${history.innerHTML} <br/> ${x} ${z}` 
         }
     }
 }
