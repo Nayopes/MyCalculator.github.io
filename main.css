@@ -1,136 +1,67 @@
-#body{
+body{
     background-color: #f4c5de;
     border-radius: 15px;
 }
 .btn{
-    position: absolute;
-    top: 10px;
     width: 100px;
-    height: 80px;
+    padding: 10px;
     font-size: 50px;
     color: white;
     border: 1px solid white;
     border-radius: 15px;
     background-color: transparent;
 }
-#main{
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+#calcSection{
     width: 600px;
     height: 680px;
-    position: relative;
-    left: 100px;
+    margin: 60px 20px 0px;
     background-color: #570933;
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 #tablo{
-    position: absolute;
-    left: 48px;
-    top: 30px;
     width: 500px;
     height: 110px;
+    margin-top: 20px;
     border: 1px solid white;
     border-radius: 15px;
     color: white;
     font-size: 50px;
-    vertical-align: 80%;
     background-color:#ad407a;
 }
-.firstRow{
-    position: absolute;
-    left: 30px;
-    top: 150px;
+.row{   
     width: 540px;
     height: 100px;
-}
-#number7{
-    left: 23px;
-}
-#number8{
-    left: 153px;
-}
-#number9{
-    left: 283px;
-}
-#multiply{
-    left: 413px;
-}
-.secondRow{
-    position: absolute;
-    left: 30px;
-    top: 260px;
-    width: 540px;
-    height: 100px;
-}
-#number4{
-    left: 23px;
-}
-#number5{
-    left: 153px;
-}
-#number6{
-    left: 283px;
-}
-#divide{
-    left: 413px;
-    font-size: 40px;
-}
-.thirdRow{
-    position: absolute;
-    left: 30px;
-    top: 370px;
-    width: 540px;
-    height: 100px;
-}
-#number3{
-    left: 23px;
-}
-#number2{
-    left: 153px;
-}
-#number1{
-    left: 283px;
-}
-#plus{
-    left: 413px;
-    font-size: 40px;
-}
-.fourthRow{
-    position: absolute;
-    left: 30px;
-    top: 480px;
-    width: 540px;
-    height: 100px;
-}
-#number0{
-    left: 23px;
-    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 #clear{
-    left: 283px;
     font-size: 45px;
 }
 #minus{
-    left: 413px;
-    font-size: 40px;
+    font-size: 50px;
 }
 #end{
-    position: absolute;
-    left: 50px;
-    top: 590px;
     width: 500px;
-    height: 50px;
+    height: 60px;
     border-radius: 20px;
     font-size: 40px;
 }
 select{
-    position: absolute;
-    left: 1100px;
     width: 120px;
     height: 40px;
     border-radius: 10px;
 }
 #submit{
-    position: absolute;
-    left: 1230px;
     width: 120px;
     height: 40px;
     border-radius: 10px;
@@ -139,26 +70,32 @@ select{
     color: black;
 }
 #second{
-    position: absolute;
-    top: 280px;
-    left: 800px;
     width: 250px;
     height: 410px;
+    color: white;
     border-radius: 30px;
     border: 1px solid #8b898b;
     background-color: #ad407a;
 }
 h1{
-    position: absolute;
-    top: 240px;
-    left: 870px;
     font-family: arial;
     font-size: 20px;
     color: #554e53;
+    text-align: center;
 }
-p{
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    color: white;
+
+@media screen and (max-width: 1200px){
+    .main{
+        flex-wrap: wrap;
+    }
+    #calcSection{
+        transform: scale(.8);
+        margin: 4px 2px;
+    }
+}
+@media screen and (max-width: 650px){
+    #calcSection{
+        transform: scale(.6);
+        margin: 0px 2px;
+    }
 }
