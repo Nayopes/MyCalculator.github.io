@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>HomeWork 17</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body id="body">
-        <div id="main">
-            <div id="tablo"></div>
 
-            <div class="firstRow">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body id="body">
+    <div>
+        <select>
+            <option value="For her 1">For her 1</option>
+            <option value="For her 2">For her 2</option>
+            <option value='For him 1'>For him 1</option>
+            <option value='For him 2'>For him 2</option>
+        </select>
+        <button id="submit">Choose me!</button>
+    </div>
+    <div class="main">
+        <div id="calcSection">
+            <input id="tablo" value="" type="text">
+            <div class="row">
                 <button class="btn" id="number7" value="7">7</button>
                 <button class="btn" id="number8" value="8">8</button>
                 <button class="btn" id="number9" value="9">9</button>
                 <button class="btn" id="multiply" value="*">*</button>
             </div>
 
-            <div class="secondRow">
+            <div class="row">
                 <button class="btn" id="number4" value="4">4</button>
                 <button class="btn" id="number5" value="5">5</button>
                 <button class="btn" id="number6" value="6">6</button>
                 <button class="btn" id="divide" value="/">/</button>
             </div>
-            
-            <div class="thirdRow">
+
+            <div class="row">
                 <button class="btn" id="number3" value="1">1</button>
                 <button class="btn" id="number2" value="2">2</button>
                 <button class="btn" id="number1" value="3">3</button>
                 <button class="btn" id="plus" value="+">+</button>
             </div>
-
-            <div class="fourthRow">
+            <div class="row">
                 <button class="btn" id="number0" value="0">0</button>
-                <button class="btn" id ="clear" value=".">C</button>
+                <button class="btn" id="backSpace" value=" "><</button>
+                <button class="btn" id="clear" value=" ">C</button>
                 <button class="btn" id="minus" value="-">-</button>
             </div>
+            <button id="end" class="btn" value="=">=</button>
+        </div>
+        <div class="historySection">
+            <h1>History</h1>
+            <div id="second">
+                <p id="history"></p>
+            </div>
+        </div>
+    </div>
+    <script src="dom.js"></script>
+</body>
 
-            <button id ="end" class="btn" value="=">=</button>
-            <select>
-                <option value="For her 1">For her 1</option>
-                <option value="For her 2">For her 2</option>
-                <option value='For him 1'>For him 1</option>
-                <option value='For him 2'>For him 2</option>
-            </select>
-            <button id="submit">Choose me!</button>
-        </div>
-        <h1>My history</h1>
-        <div id="second">
-            <p id="history"></p>
-        </div>
-        <script src="dom.js"></script>
-    </body>
 </html>
